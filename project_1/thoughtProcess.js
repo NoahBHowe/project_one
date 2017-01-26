@@ -9,7 +9,7 @@ A stretch goal will be to make it player vs. computer, racing to complete the â€
 
 Rough Layout of the three classes:
 
-            GREEN CLASS
+            GREEN1 CLASS
 1) green class = on keypress (early idea is for 's')
 2)  on keypress --> increase margin +2%;
 3)  change background of DIV STOPLIGHT to Green! ----->(Q: should I use a pre-sculpted image or                                                         create my own stoplight?)
@@ -24,7 +24,7 @@ Rough Layout of the three classes:
       -->Modal for 8bit checkered flag image? _or_ checkered cab?!
 
 
-            YELLOW CLASS
+            YELLOW1 CLASS
 1) yellow class = on keypress (early idea is for 's')
 2)  on keypress --> increase margin +4%;
 3)  change background of DIV STOPLIGHT to yellow! ----->(Q: should I use a pre-sculpted image or                                                         create my own stoplight?)
@@ -36,9 +36,11 @@ Rough Layout of the three classes:
               }}
 5) Checks margin after key press to  900px
     if so: VICTORY! (so alert('CHECKERED FLAG!'))
-      -->Modal for 8bit checkered flag image? _or_ checkered cab?!
+      -->Modal for 8bit checkered flag image? _or_ checkered cab?! -->
+      -->ENDS GAME. Creates Modal, moves to "ELSE"
+          -->the Else is a kill switch, right?
 
-            RED CLASS
+            RED1 CLASS
 1) RED class = on keypress (early idea is for 's')
 2)  on keypress --> increase margin +2%;
 3)  change background of DIV STOPLIGHT to Green! ----->(Q: should I use a pre-sculpted image or                                                         create my own stoplight?)
@@ -54,7 +56,48 @@ Rough Layout of the three classes:
 // --> don't check during red  light--no need, wasteful coding.
 
 
+-->next! repeat a parallel clock/set of classes for player 2--->adds an element of chance to it!
 
+As for the structuring of the thing:
+    1) the board is split into 1/4/1/1/4/1
+          1 column margin
+            4 columns for the left car
+              1 column for the left traffic light
+              1 column for the right traffic light
+            4 columns for the right car
+          1 column margin
+              -->or! have a div/header at the top which holds two different divs,
+              each of which is a clock (examine appended images!)
+
+    2) each car should be contained within a master-div, thus the whole car is moving, not just the trunk or the hood or sun-roof
+
+    3) In an ideal world, I would love to capture an eight bit feel for the whole thing, but I recognize that that might be best left for after I finish the rough graphics and the finished javaScript/JQuery.
+
+    4) --->CHECKERBOARD EFFECT FOR BANNER //courtesy of Lea Verou: http://jsfiddle.net/leaverou/SUgfD/?utm_source=website&utm_medium=embed&utm_campaign=SUgfD
+
+    //discern proper attribution style or don't dare fucking use it.
+
+      -->
+
+                    body {
+                    background-image:
+                      -moz-linear-gradient(45deg, #000 25%, transparent 25%),
+                      -moz-linear-gradient(-45deg, #000 25%, transparent 25%),
+                      -moz-linear-gradient(45deg, transparent 75%, #000 75%),
+                      -moz-linear-gradient(-45deg, transparent 75%, #000 75%);
+                    background-image:
+                      -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.25, #000), color-stop(.25, transparent)),
+                      -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.25, #000), color-stop(.25, transparent)),
+                      -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.75, transparent), color-stop(.75, #000)),
+                      -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.75, transparent), color-stop(.75, #000));
+
+                    -moz-background-size:100px 100px;
+                    background-size:100px 100px;
+                    -webkit-background-size:100px 101px; /* override value for shitty webkit */
+
+                    background-position:0 0, 50px 0, 50px -50px, 0px 50px;
+                }
+    5)
 
 
 
