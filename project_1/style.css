@@ -90,7 +90,7 @@ p {
 
 }
 
-#grillRow {
+#instructionBox {
   height: 150px;
   width: auto;
   margin: 10px;
@@ -108,7 +108,9 @@ p {
 
 
 /*headlights:*/
-#leftHeadlight {
+
+/*PROTOTYPE HEADLIGHT:*/
+/*#leftHeadlight {
   width: 150px;
   height: 150px;
   background: green;
@@ -121,63 +123,117 @@ p {
   overflow: auto;
 
 }
+*/
 
-/*#rightHeadlight {
+/*COURSE ONE LIGHTS:*/
+#courseOneGreen {
+  width: 150px;
+  height: 150px;
+  background: green;
+  -moz-border-radius: 75px;
+  -webkit-border-radius: 75px;
+  border: 1px solid black;
+  flex:1;
+  margin-left: 10px;
+  border-radius: 75px;
+  overflow: auto;
+  display: none;
+
+}
+
+#courseOneYellow {
+  width: 150px;
+  height: 150px;
+  background: yellow;
+  -moz-border-radius: 75px;
+  -webkit-border-radius: 75px;
+  border: 1px solid black;
+  flex:1;
+  margin-left: 10px;
+  border-radius: 75px;
+  overflow: auto;
+  display: none;
+
+}
+
+#courseOneRed {
   width: 150px;
   height: 150px;
   background: red;
   -moz-border-radius: 75px;
   -webkit-border-radius: 75px;
-  overflow: auto;
-  border-radius: 75px;
-  flex:1;
   border: 1px solid black;
-  margin-right: 10px;
-}
-*/
-
-/*<!-- light classes follow: -->*/
-.greenLightOne {
-
-}
-
-.yellowLightOne {
+  flex:1;
+  margin-left: 10px;
+  border-radius: 75px;
+  overflow: auto;
+  display: none;
 
 }
 
-.redLightOne {
+/*COURSE TWO LIGHTS:*/
+#courseTwoGreen {
+  width: 150px;
+  height: 150px;
+  background: green;
+  -moz-border-radius: 75px;
+  -webkit-border-radius: 75px;
+  border: 1px solid black;
+  flex:1;
+  margin-left: 10px;
+  border-radius: 75px;
+  overflow: auto;
+  display: none;
 
 }
 
-/*<!-- player two lights follow: -->*/
-.greenLightTwo {
+#courseTwoYellow {
+  width: 150px;
+  height: 150px;
+  background: yellow;
+  -moz-border-radius: 75px;
+  -webkit-border-radius: 75px;
+  border: 1px solid black;
+  flex:1;
+  margin-left: 10px;
+  border-radius: 75px;
+  overflow: auto;
+  display: none;
 
 }
 
-.yellowLightTwo {
+#courseTwoRed {
+  width: 150px;
+  height: 150px;
+  background: red;
+  -moz-border-radius: 75px;
+  -webkit-border-radius: 75px;
+  border: 1px solid black;
+  flex:1;
+  margin-left: 10px;
+  border-radius: 75px;
+  overflow: auto;
+  display: none;
 
 }
 
-.redLightTwo {
+
+
+/*light classes follow!*/
+.greenLight {
 
 }
 
-/*cars follow:*/
-/*left car follows:*/
-.leftCarContainer {
+.yellowLight {
 
 }
 
-.leftCar {
+.redLight {
 
 }
 
-/*right car follows:*/
-.rightCarContainer {
 
-}
 
-.rightCar {
 
-}
+
 
