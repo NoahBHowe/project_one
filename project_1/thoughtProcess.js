@@ -98,6 +98,7 @@ As for the structuring of the thing:
                     background-position:0 0, 50px 0, 50px -50px, 0px 50px;
                 }
     5) See attached wireframe sketch!
+    6)
 
 
 

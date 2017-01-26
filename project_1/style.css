@@ -1,4 +1,5 @@
 body {
+  background-color: #f7b737; /*NYC Yellow (the checker cab color--you'll recognize it when you see it)*/
 
 
 }
@@ -6,50 +7,106 @@ body {
 
 /*the checkerboard patterns below were designed by Lea Verou, and are
 taken from her tutorial at:
+http://lea.verou.me/2011/02/checkerboard-pattern-with-css3/
+and specifically her jsFiddle notation at:
 http://jsfiddle.net/leaverou/SUgfD/?utm_source=website&utm_medium=embed&utm_campaign=SUgfD
 They work by placing a linear gradient at an angle, creating squares, cool, huh?!.*/
 header {
-background-image:
-                      -moz-linear-gradient(45deg, #000 25%, transparent 25%),
-                      -moz-linear-gradient(-45deg, #000 25%, transparent 25%),
-                      -moz-linear-gradient(45deg, transparent 75%, #000 75%),
-                      -moz-linear-gradient(-45deg, transparent 75%, #000 75%);
-background-image:
-                      -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.25, #000), color-stop(.25, transparent)),
-                      -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.25, #000), color-stop(.25, transparent)),
-                      -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.75, transparent), color-stop(.75, #000)),
-                      -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.75, transparent), color-stop(.75, #000));
+  background-image:
+      -moz-linear-gradient(45deg, #000 25%, transparent 25%),
+      -moz-linear-gradient(-45deg, #000 25%, transparent 25%),
+      -moz-linear-gradient(45deg, transparent 75%, #000 75%),
+      -moz-linear-gradient(-45deg, transparent 75%, #000 75%);
+  background-image:
+      -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.25, #000), color-stop(.25, transparent)),
+      -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.25, #000), color-stop(.25, transparent)),
+      -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.75, transparent), color-stop(.75, #000)),
+      -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.75, transparent), color-stop(.75, #000));
 
-                    -moz-background-size:100px 100px;
-                    background-size:100px 100px;
-                    -webkit-background-size:100px 101px; /* override value for shitty webkit */
+      -moz-background-size:100px 100px;
+  background-size:100px 100px;
+      -webkit-background-size:100px 101px; /* override value for shitty webkit */
 
-                    background-position:0 0, 50px 0, 50px -50px, 0px 50px;
-
+  background-position:0 0, 50px 0, 50px -50px, 0px 50px;
+  height: 100px;
+  width: 100%;
+  border: 15px solid black;
+  margin: 10px;
 
 
 }
 footer {
+  background-image:
+      -moz-linear-gradient(45deg, #000 25%, transparent 25%),
+      -moz-linear-gradient(-45deg, #000 25%, transparent 25%),
+      -moz-linear-gradient(45deg, transparent 75%, #000 75%),
+      -moz-linear-gradient(-45deg, transparent 75%, #000 75%);
+  background-image:
+      -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.25, #000), color-stop(.25, transparent)),
+      -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.25, #000), color-stop(.25, transparent)),
+      -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.75, transparent), color-stop(.75, #000)),
+      -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.75, transparent), color-stop(.75, #000));
+
+      -moz-background-size:100px 100px;
+  background-size:100px 100px;
+      -webkit-background-size:100px 101px; /* override value for shitty webkit */
+
+  background-position:0 0, 50px 0, 50px -50px, 0px 50px;
+  height: 100px;
+  width: 100%;
+  border: 15px solid black;
+  margin: 10px;
+
 
 
 
 }
+#flex-Container {
+  border: 15px solid black;
+  background-image:;
+  margin: 10px;
+  width: 100%;
+  height: 1000px;
+
+
+
+
+}
+#gridPadding {   /* this is becomming a charliefoxtrot and worse, a timesink. to return to later*/
+  background-color: white;
+/*  padding: 10px;*/
+  width: 50%;
+  height: 65%;
+  margin: 0 auto;
+  position: relative;
+  padding: 10px;
+}
+/*style elements (p, h, etc.)*/
 h1 {
-  color: #f7b737; /*NYC Yellow (the checker cab color--you'll recognize it when you see it)*/
+  color: #68C1C5;
   font-weight: bolder; /*<--fairly self-explanatory*/
   font-family: 'Sarpanch', sans-serif; /*<--a nice sans-serif google open font designed by Indian Type Foundry (ITF)*/
-  outline-color: #000 solid; /*<--hopefully this outlines the text-element. if not: sierra charlie the thing*/
-  background-color: #00ff00; /*<--this is console green*/
+  text-align: center; /*<--self-explanatory*/
+  line-height: 10px; /*<--to position it properly within the header div*/
+  font-size: 75px; /*<--big, might need to be even bigger or wider?*/
+/*  background-color: #00ff00; /*<--this is console green--it looks hideous but I'm keeping it so I can use it later for something else*/*/
+  -webkit-text-fill-color: #3DA2A7; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #3DA2A7; /*the above three lines are an awesome way of outlining text, which is particularly necessary here against the yellow and black background!*/
+}
+
+p {
+
 
 }
 /*racing elements follow:*/
 /*headlights:*/
-.leftHeadlight {
+#leftHeadlight {
 
 
 
 }
-.rightHeadlight {
+#rightHeadlight {
 
 
 
