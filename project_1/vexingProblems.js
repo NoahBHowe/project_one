@@ -44,5 +44,6 @@ Problems
                   return Math.random() * (max - min) + min;
                   }
 
+  ALL ABOUT MODALS!
 
 

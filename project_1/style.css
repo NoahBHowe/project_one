@@ -1,0 +1,102 @@
+body {
+
+
+}
+/*<!-- nav and major page elements follow: -->*/
+
+/*the checkerboard patterns below were designed by Lea Verou, and are
+taken from her tutorial at:
+http://jsfiddle.net/leaverou/SUgfD/?utm_source=website&utm_medium=embed&utm_campaign=SUgfD
+They work by placing a linear gradient at an angle, creating squares, cool, huh?!.*/
+header {
+background-image:
+                      -moz-linear-gradient(45deg, #000 25%, transparent 25%),
+                      -moz-linear-gradient(-45deg, #000 25%, transparent 25%),
+                      -moz-linear-gradient(45deg, transparent 75%, #000 75%),
+                      -moz-linear-gradient(-45deg, transparent 75%, #000 75%);
+background-image:
+                      -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.25, #000), color-stop(.25, transparent)),
+                      -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.25, #000), color-stop(.25, transparent)),
+                      -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.75, transparent), color-stop(.75, #000)),
+                      -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.75, transparent), color-stop(.75, #000));
+
+                    -moz-background-size:100px 100px;
+                    background-size:100px 100px;
+                    -webkit-background-size:100px 101px; /* override value for shitty webkit */
+
+                    background-position:0 0, 50px 0, 50px -50px, 0px 50px;
+
+
+
+}
+footer {
+
+
+
+}
+h1 {
+  color: #f7b737; /*NYC Yellow (the checker cab color--you'll recognize it when you see it)*/
+  font-weight: bolder; /*<--fairly self-explanatory*/
+  font-family: 'Sarpanch', sans-serif; /*<--a nice sans-serif google open font designed by Indian Type Foundry (ITF)*/
+  outline-color: #000 solid; /*<--hopefully this outlines the text-element. if not: sierra charlie the thing*/
+  background-color: #00ff00; /*<--this is console green*/
+
+}
+/*racing elements follow:*/
+/*headlights:*/
+.leftHeadlight {
+
+
+
+}
+.rightHeadlight {
+
+
+
+}
+/*<!-- light classes follow: -->*/
+.greenLightOne {
+
+
+}
+.yellowLightOne {
+
+
+}
+.redLightOne {
+
+
+}
+/*<!-- player two lights follow: -->*/
+.greenLightTwo {
+
+
+}
+.yellowLightTwo {
+
+
+}
+.redLightTwo {
+
+
+}
+/*cars follow:*/
+/*left car follows:*/
+.leftCarContainer {
+
+
+}
+.leftCar {
+
+
+}
+/*right car follows:*/
+.rightCarContainer {
+
+
+}
+.rightCar {
+
+
+}
+
