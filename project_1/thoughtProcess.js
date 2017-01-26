@@ -6,3 +6,57 @@ I propose to create a ‘racing’ game predicated on using click events to incr
 A stretch goal will be to make it player vs. computer, racing to complete the ‘course’ by a set time, with a further stretch goal being the creation of a ‘high score’ board.
 
 
+
+Rough Layout of the three classes:
+
+            GREEN CLASS
+1) green class = on keypress (early idea is for 's')
+2)  on keypress --> increase margin +2%;
+3)  change background of DIV STOPLIGHT to Green! ----->(Q: should I use a pre-sculpted image or                                                         create my own stoplight?)
+4) SET DURATION OF CLASS: to
+            {function getRandom(min,max) {
+              min = math.ceil(say----six?);
+              max = math.max (say----ten?);
+              return Math.floor(math.random()*(max-min))+min;}
+              }}
+5) Checks margin after key press to  900px
+    if so: VICTORY! (so alert('CHECKERED FLAG!'))
+      -->Modal for 8bit checkered flag image? _or_ checkered cab?!
+
+
+            YELLOW CLASS
+1) yellow class = on keypress (early idea is for 's')
+2)  on keypress --> increase margin +4%;
+3)  change background of DIV STOPLIGHT to yellow! ----->(Q: should I use a pre-sculpted image or                                                         create my own stoplight?)
+4) SET DURATION OF CLASS: to
+            {function getRandom(min,max) {
+              min = math.ceil(say----three?);
+              max = math.max (say----six?);
+              return Math.floor(math.random()*(max-min))+min;}
+              }}
+5) Checks margin after key press to  900px
+    if so: VICTORY! (so alert('CHECKERED FLAG!'))
+      -->Modal for 8bit checkered flag image? _or_ checkered cab?!
+
+            RED CLASS
+1) RED class = on keypress (early idea is for 's')
+2)  on keypress --> increase margin +2%;
+3)  change background of DIV STOPLIGHT to Green! ----->(Q: should I use a pre-sculpted image or                                                         create my own stoplight?)
+4) SET DURATION OF CLASS: to
+            {function getRandom(min,max) {
+              min = math.ceil(say----six?);
+              max = math.max (say----ten?);
+              return Math.floor(math.random()*(max-min))+min;}
+              }}
+// 5) Checks margin after key press to  900px
+//     if so: VICTORY! (so alert('CHECKERED FLAG!'))
+//       -->Modal for 8bit checkered flag image? _or_ checkered cab?!
+// --> don't check during red  light--no need, wasteful coding.
+
+
+
+
+
+
+
+
