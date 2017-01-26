@@ -1,7 +1,5 @@
 body {
   background-color: #f7b737; /*NYC Yellow (the checker cab color--you'll recognize it when you see it)*/
-
-
 }
 /*<!-- nav and major page elements follow: -->*/
 
@@ -13,75 +11,68 @@ http://jsfiddle.net/leaverou/SUgfD/?utm_source=website&utm_medium=embed&utm_camp
 They work by placing a linear gradient at an angle, creating squares, cool, huh?!.*/
 header {
   background-image:
-      -moz-linear-gradient(45deg, #000 25%, transparent 25%),
-      -moz-linear-gradient(-45deg, #000 25%, transparent 25%),
-      -moz-linear-gradient(45deg, transparent 75%, #000 75%),
-      -moz-linear-gradient(-45deg, transparent 75%, #000 75%);
+  -moz-linear-gradient(45deg, #000 25%, transparent 25%),
+  -moz-linear-gradient(-45deg, #000 25%, transparent 25%),
+  -moz-linear-gradient(45deg, transparent 75%, #000 75%),
+  -moz-linear-gradient(-45deg, transparent 75%, #000 75%);
   background-image:
-      -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.25, #000), color-stop(.25, transparent)),
-      -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.25, #000), color-stop(.25, transparent)),
-      -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.75, transparent), color-stop(.75, #000)),
-      -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.75, transparent), color-stop(.75, #000));
+  -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.25, #000), color-stop(.25, transparent)),
+  -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.25, #000), color-stop(.25, transparent)),
+  -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.75, transparent), color-stop(.75, #000)),
+  -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.75, transparent), color-stop(.75, #000));
 
-      -moz-background-size:100px 100px;
+  -moz-background-size:100px 100px;
   background-size:100px 100px;
-      -webkit-background-size:100px 101px; /* override value for shitty webkit */
+  -webkit-background-size:100px 101px; /* override value for shitty webkit */
 
   background-position:0 0, 50px 0, 50px -50px, 0px 50px;
   height: 100px;
   width: 100%;
   border: 15px solid black;
   margin: 10px;
-
-
 }
+
 footer {
   background-image:
-      -moz-linear-gradient(45deg, #000 25%, transparent 25%),
-      -moz-linear-gradient(-45deg, #000 25%, transparent 25%),
-      -moz-linear-gradient(45deg, transparent 75%, #000 75%),
-      -moz-linear-gradient(-45deg, transparent 75%, #000 75%);
+  -moz-linear-gradient(45deg, #000 25%, transparent 25%),
+  -moz-linear-gradient(-45deg, #000 25%, transparent 25%),
+  -moz-linear-gradient(45deg, transparent 75%, #000 75%),
+  -moz-linear-gradient(-45deg, transparent 75%, #000 75%);
   background-image:
-      -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.25, #000), color-stop(.25, transparent)),
-      -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.25, #000), color-stop(.25, transparent)),
-      -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.75, transparent), color-stop(.75, #000)),
-      -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.75, transparent), color-stop(.75, #000));
-
-      -moz-background-size:100px 100px;
+  -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.25, #000), color-stop(.25, transparent)),
+  -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.25, #000), color-stop(.25, transparent)),
+  -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.75, transparent), color-stop(.75, #000)),
+  -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.75, transparent), color-stop(.75, #000));
+  -moz-background-size:100px 100px;
   background-size:100px 100px;
-      -webkit-background-size:100px 101px; /* override value for shitty webkit */
-
+  -webkit-background-size:100px 101px; /* override value for shitty webkit */
   background-position:0 0, 50px 0, 50px -50px, 0px 50px;
   height: 100px;
   width: 100%;
   border: 15px solid black;
   margin: 10px;
-
-
-
-
 }
+
 #flex-Container {
   border: 15px solid black;
-  background-image:;
+  /*  background-image:;*/
   margin: 10px;
   width: 100%;
   height: 1000px;
-
-
-
-
+  display: flex;
 }
-#gridPadding {   /* this is becomming a charliefoxtrot and worse, a timesink. to return to later*/
-  background-color: white;
-/*  padding: 10px;*/
-  width: 50%;
+
+/*/*#gridPadding {   /* this is becomming a charliefoxtrot and worse, a timesink. to return to later*/
+  /*  background-color: white;*/
+  /*  padding: 10px;*/
+/*  width: 50%;
   height: 65%;
   margin: 0 auto;
   position: relative;
-  padding: 10px;
-}
+  padding: 10px;*/
+/*}*//***//*/
 /*style elements (p, h, etc.)*/
+
 h1 {
   color: #68C1C5;
   font-weight: bolder; /*<--fairly self-explanatory*/
@@ -89,71 +80,104 @@ h1 {
   text-align: center; /*<--self-explanatory*/
   line-height: 10px; /*<--to position it properly within the header div*/
   font-size: 75px; /*<--big, might need to be even bigger or wider?*/
-/*  background-color: #00ff00; /*<--this is console green--it looks hideous but I'm keeping it so I can use it later for something else*/*/
-  -webkit-text-fill-color: #3DA2A7; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 3px;
+  /*  background-color: #00ff00; /*<--this is console green--it looks hideous but I'm keeping it so I can use it later for something else*/*/
+  -webkit-text-fill-color: #4A0000; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 4px;
   -webkit-text-stroke-color: #3DA2A7; /*the above three lines are an awesome way of outlining text, which is particularly necessary here against the yellow and black background!*/
 }
 
 p {
 
-
 }
+
+#grillRow {
+  height: 150px;
+  width: auto;
+  margin: 10px;
+  border: 15px solid black;
+  display:flex;
+  flex:1;
+  flex-direction:column;
+  /*  justify-content: space-around;*/
+}
+
+
 /*racing elements follow:*/
+/*lanes follow*/
+
+
+
 /*headlights:*/
 #leftHeadlight {
-
-
+  width: 150px;
+  height: 150px;
+  background: green;
+  -moz-border-radius: 75px;
+  -webkit-border-radius: 75px;
+  border: 1px solid black;
+  flex:1;
+  margin-left: 10px;
+  border-radius: 75px;
+  overflow: auto;
 
 }
-#rightHeadlight {
 
-
-
+/*#rightHeadlight {
+  width: 150px;
+  height: 150px;
+  background: red;
+  -moz-border-radius: 75px;
+  -webkit-border-radius: 75px;
+  overflow: auto;
+  border-radius: 75px;
+  flex:1;
+  border: 1px solid black;
+  margin-right: 10px;
 }
+*/
+
 /*<!-- light classes follow: -->*/
 .greenLightOne {
 
-
 }
+
 .yellowLightOne {
 
-
 }
+
 .redLightOne {
 
-
 }
+
 /*<!-- player two lights follow: -->*/
 .greenLightTwo {
 
-
 }
+
 .yellowLightTwo {
 
-
 }
+
 .redLightTwo {
 
-
 }
+
 /*cars follow:*/
 /*left car follows:*/
 .leftCarContainer {
 
-
 }
+
 .leftCar {
 
-
 }
+
 /*right car follows:*/
 .rightCarContainer {
 
-
 }
-.rightCar {
 
+.rightCar {
 
 }
 
