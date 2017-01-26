@@ -90,9 +90,9 @@ p {
 
 }
 
-#instructionBox {
+#instructionBox-flex {
   height: 150px;
-  width: auto;
+  width: 100%;
   margin: 10px;
   border: 15px solid black;
   display:flex;
@@ -126,7 +126,7 @@ p {
 */
 
 /*COURSE ONE LIGHTS:*/
-#courseOneGreen {
+#courseOneGreenLight {
   width: 150px;
   height: 150px;
   background: green;
@@ -141,7 +141,7 @@ p {
 
 }
 
-#courseOneYellow {
+#courseOneYellowLight {
   width: 150px;
   height: 150px;
   background: yellow;
@@ -156,7 +156,7 @@ p {
 
 }
 
-#courseOneRed {
+#courseOneRedLight {
   width: 150px;
   height: 150px;
   background: red;
@@ -172,7 +172,7 @@ p {
 }
 
 /*COURSE TWO LIGHTS:*/
-#courseTwoGreen {
+#courseTwoGreenLight {
   width: 150px;
   height: 150px;
   background: green;
@@ -187,7 +187,7 @@ p {
 
 }
 
-#courseTwoYellow {
+#courseTwoYellowLight {
   width: 150px;
   height: 150px;
   background: yellow;
@@ -202,7 +202,7 @@ p {
 
 }
 
-#courseTwoRed {
+#courseTwoRedLight {
   width: 150px;
   height: 150px;
   background: red;
@@ -216,6 +216,31 @@ p {
   display: none;
 
 }
+/*here endeth the lights!*/
+
+/*COURSE BOXES*/
+/*#courseOneCircuit {
+height: 380px;
+width: 100%;
+display: flex;
+flex-direction: : column;
+flex:1;
+margin: 10px;
+border: 15px solid black;
+
+}
+
+#courseTwoCircuit {
+height: 380px;
+width: 100%;
+display: flex;
+flex-direction : column;
+flex:1;
+margin: 10px;
+border: 15px solid black;
+
+
+}*/
 
 
 
