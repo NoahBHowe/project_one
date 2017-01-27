@@ -77,7 +77,7 @@ var rojo = function () {
 
 function () {
   if ($victory===1000) {
-
+      $clearInterval
       alert("YOU WIN!")
 
   }
@@ -93,6 +93,15 @@ function () {
 
 
 
+
+if ($color === 'green') {
+    verde ();
+} else if {
+  $color === 'yellow' {
+    amarillo();
+} else {
+    rojo();
+}
 
 
 
