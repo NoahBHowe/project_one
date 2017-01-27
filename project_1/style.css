@@ -53,26 +53,6 @@ footer {
   margin: 10px;
 }
 
-#flex-Container {
-  border: 15px solid black;
-  /*  background-image:;*/
-  margin: 10px;
-  width: 100%;
-  height: 1000px;
-  display: flex;
-}
-
-/*/*#gridPadding {   /* this is becomming a charliefoxtrot and worse, a timesink. to return to later*/
-  /*  background-color: white;*/
-  /*  padding: 10px;*/
-/*  width: 50%;
-  height: 65%;
-  margin: 0 auto;
-  position: relative;
-  padding: 10px;*/
-/*}*//***//*/
-/*style elements (p, h, etc.)*/
-
 h1 {
   color: #68C1C5;
   font-weight: bolder; /*<--fairly self-explanatory*/
@@ -85,22 +65,116 @@ h1 {
   -webkit-text-stroke-width: 4px;
   -webkit-text-stroke-color: #3DA2A7; /*the above three lines are an awesome way of outlining text, which is particularly necessary here against the yellow and black background!*/
 }
+h2 {
+  color: #ECFF00;
+  font-weight: bolder;
+/*  font-family: 'Mako', sans-serif;*/
+  font-family: 'Sarpanch', sans-serif;
+  text-align: center;
+  font-height: 50px;
+
+}
+
+
+
+
+
+h3 {
+  color: #F8DB26;
+  font-weight: normal;
+  font-family: 'Sarpanch', sans-serif;
+  text-align: center;
+  line-height: 90px
+
+}
+
+
 
 p {
 
 }
 
+
+#flex-Container {
+  border: 15px solid black;
+  /*  background-image:;*/
+  margin: 10px;
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  flex: 1;
+  flex-grow: 1;
+  flex-shrink: 1;
+  overflow: auto;
+  flex-direction: column;
+  background-color: #4A4F4E;
+}
+
 #instructionBox-flex {
-  height: 150px;
+  height: 270px;
   width: 100%;
   margin: 10px;
-  border: 15px solid black;
-  display:flex;
+  border: 15px solid #F9BA26; /*not quite New York Yellow, slightly brighter and less dirty*/
+  display: flex;
   flex:1;
-  flex-direction:column;
+  flex-direction: row;
+  background-color: #2B44A9; /*nearly complimentary color to the border color*/
+  color: #F8DB26;  /*complimentary color to the bluish background color of above*/
+/*  flex-shrink: 1;
+  flex-grow: 1;*/
+
   /*  justify-content: space-around;*/
 }
 
+#columnOne {
+  color: #F8DB26;
+  font-weight: normal;
+  font-family: 'Sarpanch', sans-serif;
+  text-align: center;
+  flex: 1;
+  flex-grow: 1;
+  height: auto;
+
+}
+
+#columnTwo {
+  color: #F8DB26;
+  font-weight: normal;
+  font-family: 'Sarpanch', sans-serif;
+  text-align: center;
+  flex: 1;
+  flex-grow: 1;
+  height: auto;
+}
+
+
+/*COURSE BOXES*/
+#courseOneCircuit {
+height: 320px;
+width: 100%;
+display: flex;
+flex-direction: column;
+/*flex:1;*/
+margin: 10px;
+border: 15px solid #77746F; /*complimentary color to asphalt*/
+background-color: #282B2A;  /*asphalt*/
+/*flex-grow: 1;
+flex-shrink: 1;*/
+}
+
+#courseTwoCircuit {
+height: 320px;
+width: 100%;
+display: flex;
+/*flex-direction: column;*/
+/*flex:1;*/
+margin: 10px;
+border: 15px solid #77746F; /*complimentary color to asphalt*/
+background-color: #282B2A;  /*asphalt*/
+/*flex-grow: 1;
+flex-shrink: 1;*/
+
+}
 
 /*racing elements follow:*/
 /*lanes follow*/
@@ -218,29 +292,7 @@ p {
 }
 /*here endeth the lights!*/
 
-/*COURSE BOXES*/
-/*#courseOneCircuit {
-height: 380px;
-width: 100%;
-display: flex;
-flex-direction: : column;
-flex:1;
-margin: 10px;
-border: 15px solid black;
 
-}
-
-#courseTwoCircuit {
-height: 380px;
-width: 100%;
-display: flex;
-flex-direction : column;
-flex:1;
-margin: 10px;
-border: 15px solid black;
-
-
-}*/
 
 
 

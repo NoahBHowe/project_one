@@ -4,13 +4,15 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Gridlock!</title>
-  <link href="https://fonts.googleapis.com/css?family=Sarpanch" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Mako|Roboto|Sarpanch" rel="stylesheet"> <!-- a nice bold sansS for taxi aprox. --> <!-- a good partner for sarpanch (Thank you very much. m. roboto!) -->
   <link rel="stylesheet" href="style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8" defer></script>
   <script src="app.js" defer></script>
   <!-- <script src="game2.js" defer></script> -->
 </head>
 <body>
+
+<!-- header section -->
   <header>
     <!--   <div id="gridPadding"> -->
     <h1 id="gridlockTitle">G  R  I  D  L  O  C  K  !</h1>
@@ -18,40 +20,57 @@
   </header> <!-- end header! -->
   <div id="flex-Container"> <!-- this is the master container. it binds the  other containers. if you will, it's 'lord of the containers' -->
     <div id="instructionBox-flex"> <!-- div for front of car/dual traffic lights! -->
+<!-- end header section -->
+
+<!-- instruction selection ->make it hover and consider replacing with something else? -->
       <div id="columnOne">
-          <h2 id="playerOne"></h2>
+        <h3>Player One</h3>
+      </div>
+      <div id="centerText">
+        <h2> i n s t r u c t i o n s </h2>
+
       </div>
       <div id="columnTwo">
-
+        <h3>Player Two</h3>
       </div>
     </div> <!-- end instrucitonBox! -->
+<!-- end instruction section -->
 
+<!-- CIRCUIT ONE! -->
     <div id="courseOneCircuit">
-  <!--     <div id="courseOneGreenLight"></div>
-      <div id="courseOneYellowLight"></div>
-      <div id="courseOneRedLight"></div> -->
-    </div> <!-- end course one! -->
+      <div id="trafficLightOne">
+          <!--<div id="courseOneGreenLight"></div>
+              <div id="courseOneYellowLight"></div>
+              <div id="courseOneRedLight"></div> -->
+            </div><!-- end scoreBoardOne -->
+          <div id="carOne"></div>
+          </div> <!-- end course one! -->
+<!-- end circuit one -->
 
-    <div id="courseTwoMasterCircuit">
-  <!--     <div id="courseTwoGreenLight"></div>
-      <div id="courseTwoYellow"></div>
-      <div id="courseTwoRedLight"></div> -->
-    </div><!-- end course two! -->
-
-
-
-
-
-
-
-
-
-
-
+<!-- CIRCUIT TWO! -->
+  <div id="courseTwoCircuit">
+    <div id="trafficLightTwo">
+        <!--<div id="courseTwoGreenLight"></div>
+            <div id="courseTwoYellow"></div>
+            <div id="courseTwoRedLight"></div> -->
+    </div> <!-- end scoreboardTwo -->
+        <div id="carTwo"></div>
+  </div><!-- end course two! -->
+<!-- end circuit two -->
 
 
 
-  </div> <!-- END FLEX CONTAINER! -->
-  <footer></footer>
+
+
+
+
+
+
+
+
+
+
+</div> <!-- END FLEX CONTAINER! -->
+<footer></footer>
 </body>
 </html>
