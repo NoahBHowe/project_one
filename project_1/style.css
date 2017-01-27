@@ -9,6 +9,7 @@ http://lea.verou.me/2011/02/checkerboard-pattern-with-css3/
 and specifically her jsFiddle notation at:
 http://jsfiddle.net/leaverou/SUgfD/?utm_source=website&utm_medium=embed&utm_campaign=SUgfD
 They work by placing a linear gradient at an angle, creating squares, cool, huh?!.*/
+
 header {
   background-image:
   -moz-linear-gradient(45deg, #000 25%, transparent 25%),
@@ -65,6 +66,8 @@ h1 {
   -webkit-text-stroke-width: 4px;
   -webkit-text-stroke-color: #3DA2A7; /*the above three lines are an awesome way of outlining text, which is particularly necessary here against the yellow and black background!*/
 }
+
+
 h2 {
   color: #ECFF00;
   font-weight: bolder;
@@ -74,9 +77,6 @@ h2 {
   font-height: 50px;
 
 }
-
-
-
 
 
 h3 {
@@ -89,8 +89,8 @@ h3 {
 }
 
 
-
 p {
+
 
 }
 
@@ -126,6 +126,7 @@ p {
   /*  justify-content: space-around;*/
 }
 
+/*Instruction Section*/
 #columnOne {
   color: #F8DB26;
   font-weight: normal;
@@ -134,6 +135,12 @@ p {
   flex: 1;
   flex-grow: 1;
   height: auto;
+
+}
+
+#centerTest {
+  height: auto;
+  text-align: center;
 
 }
 
@@ -146,154 +153,119 @@ p {
   flex-grow: 1;
   height: auto;
 }
+/*end instruciton section*/
 
 
+/*racing elements follow:*/
 /*COURSE BOXES*/
 #courseOneCircuit {
 height: 320px;
 width: 100%;
-display: flex;
-flex-direction: column;
-/*flex:1;*/
+display: inline-flex;
 margin: 10px;
 border: 15px solid #77746F; /*complimentary color to asphalt*/
 background-color: #282B2A;  /*asphalt*/
-/*flex-grow: 1;
-flex-shrink: 1;*/
+flex-direction: row;
+justify-content: flex-start;
+flex:1;
+align-items: center;
 }
 
 #courseTwoCircuit {
 height: 320px;
 width: 100%;
-display: flex;
-/*flex-direction: column;*/
-/*flex:1;*/
+display: inline-flex;
 margin: 10px;
 border: 15px solid #77746F; /*complimentary color to asphalt*/
 background-color: #282B2A;  /*asphalt*/
-/*flex-grow: 1;
-flex-shrink: 1;*/
-
+flex-direction: row;
+justify-content: flex-start;
+flex:1;
+align-items: center;
 }
 
-/*racing elements follow:*/
-/*lanes follow*/
+#trafficLightOne {
+display: block;
+/*justify-content: space-around;*/
+/*flex-direction: column;*/
+border: 10px solid #43464B; /*->a dark steel grey*/
+background-color: #696B6F; /*->a lighter steel grey*/
+height: auto;
+width: 135px;
+margin: 5px;
+clear:left;
+/*box-shadow:
+    0 0 0 8px hsl(0, 0%, 40%),
+    0 0 0 11px hsl(0, 0%, 50%);*/ /*->failed experiment. need to draw attention to the light not the traffic box*/
+}
+
+#trafficLightTwo {
+display: block;
+/*justify-content: space-around;*/
+/*flex-direction: column;*/
+border: 10px solid #43464B; /*->a dark steel grey*/
+background-color: #696B6F; /*->a lighter steel grey*/
+height: auto;
+width: 135px;
+margin: 5px;
+clear:left;
+
+}
 
 
 
 /*headlights:*/
 
 /*PROTOTYPE HEADLIGHT:*/
-/*#leftHeadlight {
-  width: 150px;
-  height: 150px;
-  background: green;
-  -moz-border-radius: 75px;
-  -webkit-border-radius: 75px;
-  border: 1px solid black;
-  flex:1;
-  margin-left: 10px;
-  border-radius: 75px;
+/*#courseOneLight {
+  width: 100px;
+  height: 100px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border: 5px solid black;
+  border-radius: 50%;
   overflow: auto;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
 
 }
 */
 
-/*COURSE ONE LIGHTS:*/
-#courseOneGreenLight {
-  width: 150px;
-  height: 150px;
-  background: green;
-  -moz-border-radius: 75px;
-  -webkit-border-radius: 75px;
-  border: 1px solid black;
-  flex:1;
-  margin-left: 10px;
-  border-radius: 75px;
+/*COURSE ONE LIGHT:*/
+#courseOneLight {
+  width: 100px;
+  height: 100px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border: 7px dashed #43464B;
+  border-radius: 50%;
   overflow: auto;
-  display: none;
-
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  box-shadow:
+    0 0 0 3px hsl(0, 0%, 50%),
+    0 0 0 4px hsl(0, 0%, 70%);
 }
 
-#courseOneYellowLight {
-  width: 150px;
-  height: 150px;
-  background: yellow;
-  -moz-border-radius: 75px;
-  -webkit-border-radius: 75px;
-  border: 1px solid black;
-  flex:1;
-  margin-left: 10px;
-  border-radius: 75px;
+/*COURSE TWO LIGHT:*/
+#courseTwoLight {
+  width: 100px;
+  height: 100px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border: 7px dashed #43464B;
+  border-radius: 50%;
   overflow: auto;
-  display: none;
-
-}
-
-#courseOneRedLight {
-  width: 150px;
-  height: 150px;
-  background: red;
-  -moz-border-radius: 75px;
-  -webkit-border-radius: 75px;
-  border: 1px solid black;
-  flex:1;
-  margin-left: 10px;
-  border-radius: 75px;
-  overflow: auto;
-  display: none;
-
-}
-
-/*COURSE TWO LIGHTS:*/
-#courseTwoGreenLight {
-  width: 150px;
-  height: 150px;
-  background: green;
-  -moz-border-radius: 75px;
-  -webkit-border-radius: 75px;
-  border: 1px solid black;
-  flex:1;
-  margin-left: 10px;
-  border-radius: 75px;
-  overflow: auto;
-  display: none;
-
-}
-
-#courseTwoYellowLight {
-  width: 150px;
-  height: 150px;
-  background: yellow;
-  -moz-border-radius: 75px;
-  -webkit-border-radius: 75px;
-  border: 1px solid black;
-  flex:1;
-  margin-left: 10px;
-  border-radius: 75px;
-  overflow: auto;
-  display: none;
-
-}
-
-#courseTwoRedLight {
-  width: 150px;
-  height: 150px;
-  background: red;
-  -moz-border-radius: 75px;
-  -webkit-border-radius: 75px;
-  border: 1px solid black;
-  flex:1;
-  margin-left: 10px;
-  border-radius: 75px;
-  overflow: auto;
-  display: none;
-
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  box-shadow:
+    0 0 0 3px hsl(0, 0%, 50%),
+    0 0 0 4px hsl(0, 0%, 70%);
 }
 /*here endeth the lights!*/
-
-
-
 
 
 /*light classes follow!*/
@@ -309,7 +281,23 @@ flex-shrink: 1;*/
 
 }
 
+/*Here endeth the light classes*/
 
+#carOne {
+  background-color: rebeccapurple;
+  height: 95px;
+  width: 136px;
+
+}
+
+#carTwo {
+  background-color: cyan;
+  height: 95px;
+  width: 136px;
+
+}
+
+}
 
 
 
