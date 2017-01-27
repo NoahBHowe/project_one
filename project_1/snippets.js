@@ -75,7 +75,8 @@ $("#carOne").on("keypress"(function () {
 
 
 $('input').on('keydown', function(event) {
-   if ($('input').val() !=='' && event.which === 13) {
+   (event.which === 13) {
+
 
 
 
