@@ -98,7 +98,9 @@ As for the structuring of the thing:
                     background-position:0 0, 50px 0, 50px -50px, 0px 50px;
                 }
     5) See attached wireframe sketch!
-    6)
+    6)    THE DOWN ARROW (if you use it) came from this website: http://www.guralp.com/sw/NAM-mk2-reflash.shtml
+          via a google search on 26 January 2017;
+    7)
 
 
 

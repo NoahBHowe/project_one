@@ -270,15 +270,16 @@ clear:left;
 
 /*light classes follow!*/
 .greenLight {
+  background-color: #27e833;
 
 }
 
 .yellowLight {
-
+  background-color: #fad201;
 }
 
 .redLight {
-
+  background-color: #f9152f;
 }
 
 /*Here endeth the light classes*/
