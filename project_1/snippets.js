@@ -1,8 +1,12 @@
 PSEUDO CODE!!!!!
-First, check if margin === 900px. If it doesn't, apply a class of green to #courseOneCar for a duration of (math.random(min,max)). At the end of the interval, check if margin === 900px, if it does, -->DECLARE VICTORY!
-    if it does not-->apply a class of yellow to #courseOneCar for a duration of (math.random(min,max)). At the end of the interval, check if margin === 900px, if it does, -->DECLARE VICTORY!
-        if it does not-->apply a class of red to #courseOneCar for a duration of (math.random(min,max)). At the end of the interval, check if margin === 900px, if it does, -->DECLARE VICTORY! if it does not -->
-              START AGAIN!
+First, clear all classes then apply a class of green to #courseOneCar for a duration of (math.random(min,max)). At the end of the interval,
+
+
+    -->apply a class of yellow to #courseOneCar for a duration of (math.random(min,max)). At the end of the interval,
+
+
+    -->apply a class of red to #courseOneCar for a duration of (math.random(min,max)). At the end of the interval, check if margin === 900px, if it does, -->DECLARE VICTORY! if it does not -->
+              START AGAIN IF KEY PRESSES HAVEN'T FOUND VICTORY!
 
 
   FURTHER MORE:
@@ -20,7 +24,7 @@ SO!
 2) Set an interval for an action
 3) math.random min and max
 4) create a named function that assigns a set of actions
-5) make sure it cycles
+5)  --
 
 
 
@@ -68,6 +72,10 @@ $("#carOne").on("keypress"(function () {
       "absolute": "+=20px"
     }, 1000);
 
+
+
+$('input').on('keydown', function(event) {
+   if ($('input').val() !=='' && event.which === 13) {
 
 
 
