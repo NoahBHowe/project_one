@@ -8,12 +8,11 @@
 $(document).ready(function() {
 //
 
-var clearInterval
 
-var randomTime = Math.ceil(Math.random()*5);
+var $randomTime = Math.ceil(Math.random()*5);
 //made it global so that I can redefine inside the function (oy)
 
-var color = ['green', 'yellow' 'red'];
+var $color = ['green', 'yellow', 'red'];
 //array to cue in the functions
 
 
@@ -35,7 +34,7 @@ var color = ['green', 'yellow' 'red'];
 // };
 
 
-var verde = function () {
+var $verde = function () {
   $("#courseOneLight").removeClass();
   $("#courseOneLight").addClass('.greenLight');
   $(window).off();
@@ -47,7 +46,7 @@ var verde = function () {
       });
 };
 
-var amarillo = function () {
+var $amarillo = function () {
   $("#courseOneLight").removeClass();
   $("#courseOneLight").addClass('.yellowLight');
   $(window).off();
@@ -59,7 +58,7 @@ var amarillo = function () {
       });
 };
 
-var rojo = function () {
+var $rojo = function () {
   $("#courseOneLight").removeClass();
   $("#courseOneLight").addClass('.redLight');
   $(window).off();
@@ -72,36 +71,34 @@ var rojo = function () {
       });
 };
 
+//the following code is modified from an alert model posted on: http://stackoverflow.com/questions/7875592/fire-event-if-margin-left-200px
+
+ var victory = 0;
+ $(document).ready(function(){
+   setInterval(function(){
+      if ($("#carOne").css("left")=='1000px' && eventtrig=0) {
+
+         alert("You beat the Gridlock!");
+         $victory=1;
+      }
+      else {
+         $victory=0;
+      }
+   }, 1000);
+});
 
 
+//the following code is modified from an alert model posted on: http://stackoverflow.com/
+// var arr = ["carrots", "bananas", "onions"];
 
-function () {
-  if ($victory===1000) {
-      $clearInterval
-      alert("YOU WIN!")
-
-  }
-
-}
+// for (var i = 0, len = color.length; i < len; i++) {
+//     //every element accesible via arr[i];
+//     //example:
+//     console.log(color[i]);
 // }
-// });
+//SAMPLE FOR LOOP
 
 
-// });
-
-// if $color === 'red' {
-
-
-
-
-if ($color === 'green') {
-    verde ();
-} else if {
-  $color === 'yellow' {
-    amarillo();
-} else {
-    rojo();
-}
 
 
 
@@ -128,7 +125,19 @@ if ($color === 'green') {
 
 
 
-// var conundrum = setInterval(function() {
+var $conundrum = setInterval(function() {
+$randomTime = (Math.ceil(Math.random()*5));
+for (var i = 0, len = $color.length; i < len; i++) {
+    var $snorkel = color[i]
+$snorkel();
+if ($snorkel === 'green') {
+    $verde();
+} else if
+   $snorkel === 'yellow'} {
+    $amarillo();
+} else {
+    $rojo();
+}
 
 
 
@@ -137,17 +146,21 @@ if ($color === 'green') {
 
 
 
+var victory = 0;
+ $(document).ready(function(){
+   setInterval(function(){
+      if ($("#carOne").css("left")=='1000px' && eventtrig=0) {
 
+         alert("You beat the Gridlock!");
+         $victory=1;
+      }
+      else {
+         $victory=0;
+      }
+   }, 1000);
+});
 
-
-
-
-
-
-
-
-
-// });
+});
 
 
 
