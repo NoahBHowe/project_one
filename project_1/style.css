@@ -62,7 +62,10 @@ h1 {
   line-height: 10px; /*<--to position it properly within the header div*/
   font-size: 75px; /*<--big, might need to be even bigger or wider?*/
   /*  background-color: #00ff00; /*<--this is console green--it looks hideous but I'm keeping it so I can use it later for something else*/*/
-  -webkit-text-fill-color: #4A0000; /* Will override color (regardless of order) */
+ }
+
+ #gridlockTitle {
+   -webkit-text-fill-color: #4A0000; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 4px;
   -webkit-text-stroke-color: #3DA2A7; /*the above three lines are an awesome way of outlining text, which is particularly necessary here against the yellow and black background!*/
 }
@@ -88,9 +91,17 @@ h3 {
 
 }
 
+#tToStart {
+  font-size: 55px;
 
-p {
 
+}
+
+#turtle {
+  font-family: 'Sarpanch', sans-serif;
+  text-align: center;
+  font-height: 50px;
+  font-color: ;
 
 }
 
@@ -141,6 +152,9 @@ p {
 #centerTest {
   height: auto;
   text-align: center;
+  font-family: 'Sarpanch', sans-serif;
+  text-align: center;
+  font-height: 50px;
 
 }
 
@@ -287,22 +301,29 @@ clear:left;
 /*Here endeth the light classes*/
 
 #carOne {
-  background-color: rebeccapurple;
+  background-color: #F8DB26; /*<-a nice urgent shade of red, complimentary to the NYC boro taxi color*/
   height: 95px;
   width: 136px;
   position: absolute;
   left: 190px; /*<-STARTS AT POSITION 190px!!!*/
+  border: 3px solid black;
+  box-shadow:
+    0 0 0 3px hsl(0, 0%, 50%),
+    0 0 0 4px hsl(0, 0%, 70%);
 
 
 }
 
 #carTwo {
-  background-color: cyan;
+  background-color: #A7C260; /*NYC Boro Taxi color*/
   height: 95px;
   width: 136px;
   position: absolute;
   left: 190px; /*<-STARTS AT POSITION 190px!!!*/
-
+  border: 3px solid black;
+  box-shadow:
+    0 0 0 3px hsl(0, 0%, 50%),
+    0 0 0 4px hsl(0, 0%, 70%);
 }
 
 

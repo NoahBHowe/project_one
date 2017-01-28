@@ -39,11 +39,11 @@ var $verde = function () {
   $("#courseOneLight").addClass('.greenLight');
   $(window).off();
   $(window).on('keydown', function(event) {
-     (event.which === 83)
-      $("#carOne").animate ({
-        "left" : "+=10px",
-        });
-      });
+   (event.which === 83)
+   $("#carOne").animate ({
+    "left" : "+=10px",
+  });
+ });
 };
 
 var $amarillo = function () {
@@ -51,11 +51,11 @@ var $amarillo = function () {
   $("#courseOneLight").addClass('.yellowLight');
   $(window).off();
   $(window).on('keydown', function(event) {
-     (event.which === 83)
-      $("#carOne").animate ({
-        "left" : "+=20px",
-        });
-      });
+   (event.which === 83)
+   $("#carOne").animate ({
+    "left" : "+=20px",
+  });
+ });
 };
 
 var $rojo = function () {
@@ -63,121 +63,49 @@ var $rojo = function () {
   $("#courseOneLight").addClass('.redLight');
   $(window).off();
   $(window).on('keydown', function(event) {
-     (event.which === 83)
-      $("#carOne").animate ({
-        "left" : "-=15px",
-        });
+   (event.which === 83)
+   $("#carOne").animate ({
+    "left" : "-=15px",
+  });
 
-      });
+ });
 };
 
-//the following code is modified from an alert model posted on: http://stackoverflow.com/questions/7875592/fire-event-if-margin-left-200px
+var $conundrum = function () {
+  setInterval(function() {
+  $randomTime = (Math.ceil(Math.random()*5));
+  for (var i = 0, len = $color.length; i < len; i++) {
+    var $snorkel = function () {$color[i]};
+    $snorkel();
+    if ($snorkel === 'green') {
+      $verde();
+    } else if
+    ($snorkel === 'yellow') {
+      $amarillo();
+    } else {
+      $rojo();
+    }
 
- var victory = 0;
- $(document).ready(function(){
-   setInterval(function(){
-      if ($("#carOne").css("left")=='1000px' && eventtrig=0) {
-
-         alert("You beat the Gridlock!");
-         $victory=1;
+ //victory conditions below!
+ //the victory code is modified from an alert model posted on: http://stackoverflow.com/questions/7875592/fire-event-if-margin-left-200px
+     var $victory = 0;
+      setInterval(function(){
+        if ($("#carOne").css("left")==="1000px" && $victory===0) {
+        alert("You beat the Gridlock!");
+        $victory=1;
       }
-      else {
-         $victory=0;
-      }
-   }, 1000);
-});
+        else {
+        $victory=0;
+          }
+      },
+      1000);
+    }(1000*$randomTime);
+  });
+};
 
-
-//the following code is modified from an alert model posted on: http://stackoverflow.com/
-// var arr = ["carrots", "bananas", "onions"];
-
-// for (var i = 0, len = color.length; i < len; i++) {
-//     //every element accesible via arr[i];
-//     //example:
-//     console.log(color[i]);
-// }
-//SAMPLE FOR LOOP
-
-
-
-
-
-
-
-// }
-
-// (if ($color === 'green') {
-//     $verde ();
-// } else if ($color === 'yellow') {
-//     $amarillo ();
-// } else {
-//     $rojo;
-// });
-
-
-
-
-
-
-
-
-
-
-
-
-var $conundrum = setInterval(function() {
-$randomTime = (Math.ceil(Math.random()*5));
-for (var i = 0, len = $color.length; i < len; i++) {
-    var $snorkel = color[i]
-$snorkel();
-if ($snorkel === 'green') {
-    $verde();
-} else if
-   $snorkel === 'yellow'} {
-    $amarillo();
-} else {
-    $rojo();
-}
-
-
-
-
-
-
-
-
-var victory = 0;
- $(document).ready(function(){
-   setInterval(function(){
-      if ($("#carOne").css("left")=='1000px' && eventtrig=0) {
-
-         alert("You beat the Gridlock!");
-         $victory=1;
-      }
-      else {
-         $victory=0;
-      }
-   }, 1000);
+$(window).on('keydown', function(event) {
+   (event.which === 84);
+    $conundrum();  //gotta call the function!
 });
 
 });
-
-
-
-
-
-
-
-
-
-// var $(verde) = function () {
-
-//clears all classes from #courseOneLight
-//adds class 'greenLight'
-
-
-
-
-// sets 's' key as keydown for moving car
-
-
