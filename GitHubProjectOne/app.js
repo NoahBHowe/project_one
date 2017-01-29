@@ -119,78 +119,84 @@ var $rojoRedTwo = function () {
 
 var $timesRunVerde = 0;
 var $goGreen = function (){
+  var $randomTime = Math.floor(((Math.random() * 10) + 1)*1000);
   var $verde = setInterval(function(){
     $timesRunVerde += 1;
     if($timesRunVerde === 2){
       clearInterval($verde);
     }
-    var $timesRunRojo =0;   //<--to reset the run time of the class before it to ensure it runs the next cycle through (check to make sure this has proper scope)
+    var $timesRunRojo = 0;   //<--to reset the run time of the class before it to ensure it runs the next cycle through (check to make sure this has proper scope)
     $verdeGreen();
-  }),$randomTime;
+  },$randomTime);
 };
 
 var $timesRunAmarillo = 0;
-var $goYellow = function (){
-  var $amarillo = setInterval(function(){
+var $goYellow = function () {
+  var $randomTime = Math.floor(((Math.random() * 10) + 1)*1000);
+  var $amarillo = setInterval(function() {
     $timesRunAmarillo += 1;
-    if($timesRunAmarillo === 2){
+    if($timesRunAmarillo === 2) {
       clearInterval($amarillo);
     }
-    var $timesRunVerde =0;
+    var $timesRunVerde = 0;
     $amarilloYellow();
-  }),$randomTime;
+  },$randomTime);
 };
 
 
 var timesRunRojo = 0;
 var $goRed = function (){
+  var $randomTime = Math.floor(((Math.random() * 10) + 1)*1000);
   var $rojo = setInterval(function(){
     timesRunRojo += 1;
     if(timesRunRojo === 2){
       clearInterval($rojo);
     }
-    var $timesRunAmarillo =0;
+    var $timesRunAmarillo = 0;
     $rojoRed();
-  }),$randomTime;
+  },$randomTime);
 };
 
 //PLAYER TWO INTERVAL FUNCTIONS!!!
 
 var $timesRunVerdeTwo = 0;
 var $goGreenTwo = function (){
+  var $randomTime = Math.floor(((Math.random() * 10) + 1)*1000);
   var $verdeTwo = setInterval(function(){
     $timesRunVerdeTwo += 1;
     if($timesRunVerdeTwo === 2){
       clearInterval($verdeTwo);
     }
-    var $timesRunRojoTwo =0;
+    var $timesRunRojoTwo = 0;
     $verdeGreenTwo();
-  }),$randomTime;
+  },$randomTime);
 };
 
 var $timesRunAmarilloTwo = 0;
 var $goYellowTwo = function (){
+  var $randomTime = Math.floor(((Math.random() * 10) + 1)*1000);
   var $amarilloTwo = setInterval(function(){
     $timesRunAmarillo += 1;
     if($timesRunAmarilloTwo === 2){
       clearInterval($amarilloTwo);
     }
-    var $timesRunVerdeTwo =0;
+    var $timesRunVerdeTwo = 0;
     $amarilloYellowTwo();
-  }),$randomTime;
+  },$randomTime);
 };
 
 
 var timesRunRojoTwo = 0;
 var $goRedTwo = function (){
+  var $randomTime = Math.floor(((Math.random() * 10) + 1)*1000);
   var $rojoTwo = setInterval(function(){
     timesRunRojoTwo += 1;
     if(timesRunRojoTwo === 2){
       clearInterval($rojoTwo);
     }
-    var $timesRunAmarilloTwo =0;
+    var $timesRunAmarilloTwo = 0;
     $rojoRedTwo();
-  }),$randomTime;
+  },$randomTime);
 };
 
 //Master interval functions!!******
@@ -201,9 +207,10 @@ var $conundrum = function () {
     alert("You beat the Gridlock!");
     clearInterval($conundrum);
   }
+  var $randomTime = Math.floor(((Math.random() * 10) + 1)*1000);
+  $goRed();
   $goGreen();
   $goYellow();
-  $goRed();
 },$randomTime);
 };
 //**TWO**//
@@ -213,9 +220,10 @@ var $conundrumTwo = function () {
     alert("You beat the Gridlock!");
     clearInterval($conundrumTwo);
   }
+  var $randomTime = Math.floor(((Math.random() * 10) + 1)*1000);
+  $goRedTwo();
   $goGreenTwo();
   $goYellowTwo();
-  $goRedTwo();
 },$randomTime);
 };
 
@@ -224,16 +232,16 @@ var $victory = function () {
       if ($("#carOne").css("left")=="1000px"){
          alert("You beat the Gridlock!");
       }
-   }, 1000);
-}
+   },1000);
+};
 
 var $victoryTwo = function () {
    setInterval(function(){
       if ($("#carTwo").css("left")=="1000px"){
          alert("You beat the Gridlock!");
       }
-   }, 1000);
-}
+   },1000);
+};
 
 
 

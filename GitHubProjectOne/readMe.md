@@ -15,5 +15,12 @@ I approached the game like an equation: first I figured out the order of the var
 3. As a user, I should be able to see whether to go, slow down or stop
 4. As a user, I should be able to go, slow down or stop.
 5. As a user, I should be able to see when I am advancing or retreating.
-6. As a user, I should be able to play against a second player
-7. As a user, I should be able to see who has won
+6. As a user, I should be able to play against a second player.
+7. As a user, I should be able to see who has won.
+
+
+##How-to-Use!
+Player one and player two race to reach the finish line. Player One advances by pressing the 'S' key, while Player Two advances by clicking the mouse. When the light shows green you go forward, while it shows yellow you slow, but if you are still clicking when it turns to red you will go backwards. The first car to travel 1000 pixels wins!
+
+##Unsolved problems:
+I have 
