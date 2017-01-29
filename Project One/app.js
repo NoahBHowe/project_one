@@ -1,6 +1,6 @@
 'use strict';
 //as per convention
-$(document).ready(function() { });
+$(document).ready(function() {
 //loads the functions only after jquery has been loaded
 var $randomTime = Math.floor(((Math.random() * 10) + 1)*1000);
 
@@ -38,7 +38,7 @@ var $verdeGreen = function () {
   $(window).on('keydown', function(event) {
    (event.which === 83);
    $("#carOne").animate ({
-    "left" : "+=10px",
+    "left" : "+=100px",
   });
  });
 };
@@ -78,12 +78,11 @@ var $verdeGreenTwo = function () {
   $("#courseTwoLight").removeClass();
   $("#courseTwoLight").addClass("greenLight");
   $(window).off();
-  $(window).on('keydown', function(event) {
-   (event.which === 76);
+  $(window).on("click", (function() {
    $("#carTwo").animate ({
-    "left" : "+=10px",
+    "left" : "+=100px",
   });
- });
+}));
 };
 
 
@@ -91,12 +90,11 @@ var $amarilloYellowTwo = function () {
   $("#courseTwoLight").removeClass();
   $("#courseTwoLight").addClass("yellowLight");
   $(window).off();
-  $(window).on('keydown', function(event) {
-   (event.which === 76);
-   $("#carOne").animate ({
+  $(window).on("click", (function() {
+   $("#carTwo").animate ({
     "left" : "+=20px",
   });
- });
+}));
 };
 
 
@@ -105,13 +103,11 @@ var $rojoRedTwo = function () {
   $("#courseTwoLight").removeClass();
   $("#courseTwoLight").addClass("redLight");
   $(window).off();
-  $(window).on('keydown', function(event) {
-   (event.which === 76);
+  $(window).on("click", (function() {
    $("#carTwo").animate ({
     "left" : "-=15px",
   });
-
- });
+}));
 };
 
 
@@ -169,7 +165,7 @@ var $goGreenTwo = function (){
     }
     var $timesRunRojoTwo =0;
     $verdeGreenTwo();
-  }),$ranodomTime;
+  }),$randomTime;
 };
 
 var $timesRunAmarilloTwo = 0;
@@ -181,7 +177,7 @@ var $goYellowTwo = function (){
     }
     var $timesRunVerdeTwo =0;
     $amarilloYellowTwo();
-  }),$ranodomTime;
+  }),$randomTime;
 };
 
 
@@ -194,55 +190,67 @@ var $goRedTwo = function (){
     }
     var $timesRunAmarilloTwo =0;
     $rojoRedTwo();
-  }),$ranodomTime;
+  }),$randomTime;
 };
 
 //Master interval functions!!******
 //**ONE**//
 var $conundrum = function () {
   setInterval(function(){
- if ($("#carOne").css("left")==="1000px") {
-      alert("You beat the Gridlock!");
-      clearInterval($conundrum);
-    }
-    $goGreen();
-    $goYellow();
-    $goRed();
-    },$randomTime);
+   if ($("#carOne").css("left")==="1000px") {
+    alert("You beat the Gridlock!");
+    clearInterval($conundrum);
+  }
+  $goGreen();
+  $goYellow();
+  $goRed();
+},$randomTime);
 };
 //**TWO**//
 var $conundrumTwo = function () {
   setInterval(function(){
- if ($("#carTwo").css("left")==="1000px") {
-      alert("You beat the Gridlock!");
-      clearInterval($conundrumTwo);
-    }
-    $goGreenTwo();
-    $goYellowTwo();
-    $goRedTwo();
-    },$ranodomTime);
+   if ($("#carTwo").css("left")==="1000px") {
+    alert("You beat the Gridlock!");
+    clearInterval($conundrumTwo);
+  }
+  $goGreenTwo();
+  $goYellowTwo();
+  $goRedTwo();
+},$randomTime);
 };
 
+var $victory = function () {
+   setInterval(function(){
+      if ($("#carOne").css("left")=="1000px"){
+         alert("You beat the Gridlock!");
+      }
+   }, 1000);
+}
 
-
-
-
+var $victoryTwo = function () {
+   setInterval(function(){
+      if ($("#carTwo").css("left")=="1000px"){
+         alert("You beat the Gridlock!");
+      }
+   }, 1000);
+}
 
 
 
 $(window).on('keydown', function(event) {
  (event.which === 84);
-    $conundrum(); //gotta call the functions!
+    $conundrum();
+    $victory();  //gotta call the functions!
   });
 
 
+$(window).on("click",(function() {
+  $conundrumTwo();
+  $victoryTwo();
+}));
+
+
 });
-
-
-
-
-
-
 
 
 
