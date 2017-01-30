@@ -234,10 +234,10 @@ var $victory = function () {
          $eventtrig=1;
       }
       else {
-         eventtrig=0;
+         $eventtrig=0;
       }
    }, 1000);
-}
+};
 var $victoryTwo = function () {
    setInterval(function(){
       if (parseInt($("#carTwo").css("left")) >= 1000){ //massive thanks to Bobby for suggesting parseInt to measure victory
@@ -245,10 +245,10 @@ var $victoryTwo = function () {
          $eventtrig=1; //and while mentioned in a separate js file: the origin of the alert I used here I found in : http://stackoverflow.com/questions/7875592/fire-event-if-margin-left-200px
       }
       else {
-         eventtrig=0;
+         $eventtrig=0;
       }
    }, 1000);   //
-}
+};
 
 
 
@@ -263,7 +263,7 @@ $(window).on("click",(function() {
   $conundrumTwo();
   $victoryTwo();
 }));
-
+});
 
 
 
