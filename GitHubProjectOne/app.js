@@ -263,7 +263,7 @@ $(window).on("click",(function() {
   $conundrumTwo();
   $victoryTwo();
 }));
+}
 
-});
 
 
