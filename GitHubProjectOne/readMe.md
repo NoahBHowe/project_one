@@ -22,4 +22,8 @@ I approached the game like an equation: first I figured out the order of the var
 Player one and player two race to reach the finish line. Player One advances by pressing the 'S' key, while Player Two advances by clicking the mouse. When the light shows green you go forward, while it shows yellow you slow, but if you are still clicking when it turns to red you will go backwards. The first car to travel 1000 pixels wins!
 
 ##Unsolved problems:
-I have had a consistent problem checking for victory according to 1000 pixels. I suspect the problem lies in structuring the victory check within the loops I have constructed, rather then in implementing it as my check to stop the interval. Otherwise, it could be a matter of phrasing. Finally, I am looking to set an external timer to determine a high scoring list. 
+I would like to fine-tune the timing and make it into a more competitive experience. Additionally, fixing the key press (currently for player one, any key press works instead of just the T and S keys). Finally, there are some style issues I would like to resolve, including having the time to render an eight bit yellow cab and boro taxi and adding a finish line into the course divs, which would require exporting them.
+
+
+##Where To Go From Here:
+I am looking to set an external timer to determine a high scoring list. A single player would be fairly easy to implement--that would be a single Timeout check that parses the 'left value' into an array, and then orders the array (for high scores), shifting the 0 index into digital oblivion and printing the rest. I think I'll make that tonight. 

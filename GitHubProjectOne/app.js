@@ -3,7 +3,7 @@
 $(document).ready(function() {
 //loads the functions only after jquery has been loaded
 var $randomTime = Math.floor(((Math.random() * 10) + 6)*1000);
-
+var $eventtrig = 0;
 
 
 
@@ -119,7 +119,7 @@ var $rojoRedTwo = function () {
 
 var $timesRunVerde = 0;
 var $goGreen = function (){
-  var $randomTime = Math.floor(((Math.random() * 10) + 1)*1000);
+  var $randomTime = Math.floor(((Math.random() * 10) + 2)*1000);
   var $verde = setInterval(function(){
     $timesRunVerde += 1;
     if($timesRunVerde === 2){
@@ -132,7 +132,7 @@ var $goGreen = function (){
 
 var $timesRunAmarillo = 0;
 var $goYellow = function () {
-  var $randomTime = Math.floor(((Math.random() * 10) + 1)*1000);
+  var $randomTime = Math.floor(((Math.random() * 10) + 2)*1000);
   var $amarillo = setInterval(function() {
     $timesRunAmarillo += 1;
     if($timesRunAmarillo === 2) {
@@ -161,7 +161,7 @@ var $goRed = function (){
 
 var $timesRunVerdeTwo = 0;
 var $goGreenTwo = function (){
-  var $randomTime = Math.floor(((Math.random() * 10) + 5)*1000);
+  var $randomTime = Math.floor(((Math.random() * 10) + 2)*1000);
   var $verdeTwo = setInterval(function(){
     $timesRunVerdeTwo += 1;
     if($timesRunVerdeTwo === 2){
@@ -174,7 +174,7 @@ var $goGreenTwo = function (){
 
 var $timesRunAmarilloTwo = 0;
 var $goYellowTwo = function (){
-  var $randomTime = Math.floor(((Math.random() * 10) + 5)*1000);
+  var $randomTime = Math.floor(((Math.random() * 10) + 2)*1000);
   var $amarilloTwo = setInterval(function(){
     $timesRunAmarillo += 1;
     if($timesRunAmarilloTwo === 2){
@@ -229,19 +229,26 @@ var $conundrumTwo = function () {
 
 var $victory = function () {
    setInterval(function(){
-      if ($("#carOne").css("left")=="1000px"){
+      if (parseInt($("#carOne").css("left")) >= 1000){
          alert("You beat the Gridlock!");
+         $eventtrig=1;
       }
-   },1000);
-};
+      else {
+         eventtrig=0;
+      }
+   }, 1000);
 
 var $victoryTwo = function () {
    setInterval(function(){
-      if ($("#carTwo").css("left")=="1000px"){
-         alert("You beat the Gridlock!");
+      if (parseInt($("#carTwo").css("left")) >= 1000){ //massive thanks to Bobby for suggesting parseInt to measure victory
+                alert("You beat the Gridlock!");
+         $eventtrig=1; //and while mentioned in a separate js file: the origin of the alert I used here I found in : http://stackoverflow.com/questions/7875592/fire-event-if-margin-left-200px
       }
-   },1000);
-};
+      else {
+         eventtrig=0;
+      }
+   }, 1000);   //
+
 
 
 
@@ -257,8 +264,6 @@ $(window).on("click",(function() {
   $victoryTwo();
 }));
 
-
 });
-
 
 
