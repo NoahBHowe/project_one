@@ -92,9 +92,15 @@ h3 {
 }
 
 #tToStart {
-  font-size: 35px;
+  font-size: 25px;
 
+}
 
+h4 {
+  color: #ECFF00;
+  font-weight: normal;
+  font-family: 'Sarpanch', sans-serif;
+  text-align: center;
 }
 
 #turtle {
