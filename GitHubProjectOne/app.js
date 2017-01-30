@@ -2,7 +2,7 @@
 //as per convention
 $(document).ready(function() {
 //loads the functions only after jquery has been loaded
-var $randomTime = Math.floor(((Math.random() * 10) + 1)*1000);
+var $randomTime = Math.floor(((Math.random() * 10) + 6)*1000);
 
 
 
@@ -65,7 +65,7 @@ var $rojoRed = function () {
   $(window).on('keydown', function(event) {
    (event.which === 83);
    $("#carOne").animate ({
-    "left" : "-=15px",
+    "left" : "-=25px",
   });
 
  });
@@ -105,7 +105,7 @@ var $rojoRedTwo = function () {
   $(window).off();
   $(window).on("click", (function() {
    $("#carTwo").animate ({
-    "left" : "-=15px",
+    "left" : "-=25px",
   });
 }));
 };
