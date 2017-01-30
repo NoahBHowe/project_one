@@ -1,6 +1,6 @@
 'use strict';
 //as per convention
-$(document).ready(function() {
+$(document).ready(function() { });
 //loads the functions only after jquery has been loaded
 var $randomTime = Math.floor(((Math.random() * 10) + 6)*1000);
 var $eventtrig = 0;
@@ -237,7 +237,7 @@ var $victory = function () {
          $eventtrig=0;
       }
    }, 1000);
-};
+}
 var $victoryTwo = function () {
    setInterval(function(){
       if (parseInt($("#carTwo").css("left")) >= 1000){ //massive thanks to Bobby for suggesting parseInt to measure victory
@@ -248,12 +248,12 @@ var $victoryTwo = function () {
          $eventtrig=0;
       }
    }, 1000);   //
-};
+}
 
 
 
 $(window).on('keydown', function(event) {
- (event.which === 84);
+ // (event.which === 84);
     $conundrum();
     $victory();  //gotta call the functions!
   });
