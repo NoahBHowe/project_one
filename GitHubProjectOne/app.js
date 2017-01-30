@@ -146,7 +146,7 @@ var $goYellow = function () {
 
 var timesRunRojo = 0;
 var $goRed = function (){
-  var $randomTime = Math.floor(((Math.random() * 10) + 1)*1000);
+  var $randomTime = Math.floor(((Math.random() * 10) + 5)*1000);
   var $rojo = setInterval(function(){
     timesRunRojo += 1;
     if(timesRunRojo === 2){
@@ -161,7 +161,7 @@ var $goRed = function (){
 
 var $timesRunVerdeTwo = 0;
 var $goGreenTwo = function (){
-  var $randomTime = Math.floor(((Math.random() * 10) + 1)*1000);
+  var $randomTime = Math.floor(((Math.random() * 10) + 5)*1000);
   var $verdeTwo = setInterval(function(){
     $timesRunVerdeTwo += 1;
     if($timesRunVerdeTwo === 2){
@@ -174,7 +174,7 @@ var $goGreenTwo = function (){
 
 var $timesRunAmarilloTwo = 0;
 var $goYellowTwo = function (){
-  var $randomTime = Math.floor(((Math.random() * 10) + 1)*1000);
+  var $randomTime = Math.floor(((Math.random() * 10) + 5)*1000);
   var $amarilloTwo = setInterval(function(){
     $timesRunAmarillo += 1;
     if($timesRunAmarilloTwo === 2){
@@ -188,7 +188,7 @@ var $goYellowTwo = function (){
 
 var timesRunRojoTwo = 0;
 var $goRedTwo = function (){
-  var $randomTime = Math.floor(((Math.random() * 10) + 1)*1000);
+  var $randomTime = Math.floor(((Math.random() * 10) + 5)*1000);
   var $rojoTwo = setInterval(function(){
     timesRunRojoTwo += 1;
     if(timesRunRojoTwo === 2){
@@ -207,7 +207,7 @@ var $conundrum = function () {
     alert("You beat the Gridlock!");
     clearInterval($conundrum);
   }
-  var $randomTime = Math.floor(((Math.random() * 10) + 1)*1000);
+  var $randomTime = Math.floor(((Math.random() * 10) + 5)*1000);
   $goRed();
   $goGreen();
   $goYellow();
@@ -220,7 +220,7 @@ var $conundrumTwo = function () {
     alert("You beat the Gridlock!");
     clearInterval($conundrumTwo);
   }
-  var $randomTime = Math.floor(((Math.random() * 10) + 1)*1000);
+  var $randomTime = Math.floor(((Math.random() * 10) + 5)*1000);
   $goRedTwo();
   $goGreenTwo();
   $goYellowTwo();
