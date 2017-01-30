@@ -237,7 +237,7 @@ var $victory = function () {
          eventtrig=0;
       }
    }, 1000);
-
+}
 var $victoryTwo = function () {
    setInterval(function(){
       if (parseInt($("#carTwo").css("left")) >= 1000){ //massive thanks to Bobby for suggesting parseInt to measure victory
@@ -248,7 +248,7 @@ var $victoryTwo = function () {
          eventtrig=0;
       }
    }, 1000);   //
-
+}
 
 
 
@@ -263,7 +263,7 @@ $(window).on("click",(function() {
   $conundrumTwo();
   $victoryTwo();
 }));
-}
+
 
 
 
