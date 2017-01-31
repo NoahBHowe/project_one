@@ -61,7 +61,7 @@ h1 {
   text-align: center; /*<--self-explanatory*/
   line-height: 10px; /*<--to position it properly within the header div*/
   font-size: 75px; /*<--big, might need to be even bigger or wider?*/
-  /*  background-color: #00ff00; /*<--this is console green--it looks hideous but I'm keeping it so I can use it later for something else*/*/
+  /*  background-color: #00ff00; /*<--this is console green--it looks hideous but I'm keeping it so I can use it later for something else*/
  }
 
  #gridlockTitle {

@@ -1,7 +1,10 @@
 'use strict';
 //as per convention
-$(document).ready(function() { });
+
 //loads the functions only after jquery has been loaded
+$(document).ready(function() {
+
+
 var $randomTime = Math.floor(((Math.random() * 10) + 6)*1000);
 var $eventtrig = 0;
 
@@ -63,11 +66,9 @@ var $rojoRed = function () {
   $("#courseOneLight").addClass("redLight");
   $(window).off();
   $(window).on('keydown', function(event) {
-   (event.which === 83);
-   $("#carOne").animate ({
-    "left" : "-=25px",
-  });
-
+   if (event.which === 83) {
+     $("#carOne").animate ({ "left" : "-=25px" });
+   }
  });
 };
 
@@ -82,7 +83,7 @@ var $verdeGreenTwo = function () {
    $("#carTwo").animate ({
     "left" : "+=100px",
   });
-}));
+ }));
 };
 
 
@@ -94,7 +95,7 @@ var $amarilloYellowTwo = function () {
    $("#carTwo").animate ({
     "left" : "+=20px",
   });
-}));
+ }));
 };
 
 
@@ -107,7 +108,7 @@ var $rojoRedTwo = function () {
    $("#carTwo").animate ({
     "left" : "-=25px",
   });
-}));
+ }));
 };
 
 
@@ -203,15 +204,15 @@ var $goRedTwo = function (){
 //**ONE**//
 var $conundrum = function () {
   setInterval(function(){
-   if ($("#carOne").css("left")==="1000px") {
-    alert("You beat the Gridlock!");
-    clearInterval($conundrum);
-  }
-  var $randomTime = Math.floor(((Math.random() * 10) + 5)*1000);
-  $goRed();
-  $goGreen();
-  $goYellow();
-},$randomTime);
+   if ($("#carOne").css("left") === "1000px") {
+      alert("You beat the Gridlock!");
+      clearInterval($conundrum);
+    }
+    var $randomTime = Math.floor(((Math.random() * 10) + 5)*1000);
+    $goRed();
+    $goGreen();
+    $goYellow();
+  }, $randomTime);
 };
 //**TWO**//
 var $conundrumTwo = function () {
@@ -227,43 +228,44 @@ var $conundrumTwo = function () {
 },$randomTime);
 };
 
-var $victory = function () {
-   setInterval(function(){
+  var $victory = function () {
+    setInterval(function(){
       if (parseInt($("#carOne").css("left")) >= 1000){
-         alert("You beat the Gridlock!");
-         $eventtrig=1;
+        alert("You beat the Gridlock!");
+        $eventtrig = 1;
+      } else {
+        $eventtrig = 0;
       }
-      else {
-         $eventtrig=0;
-      }
-   }, 1000);
-}
-var $victoryTwo = function () {
-   setInterval(function(){
+    }, 1000);
+  }
+
+  var $victoryTwo = function () {
+    // SetInterval to do...
+    setInterval(function(){
       if (parseInt($("#carTwo").css("left")) >= 1000){ //massive thanks to Bobby for suggesting parseInt to measure victory
-                alert("You beat the Gridlock!");
-         $eventtrig=1; //and while mentioned in a separate js file: the origin of the alert I used here I found in : http://stackoverflow.com/questions/7875592/fire-event-if-margin-left-200px
+        alert("You beat the Gridlock!");
+        $eventtrig=1; //and while mentioned in a separate js file: the origin of the alert I used here I found in : http://stackoverflow.com/questions/7875592/fire-event-if-margin-left-200px
+      } else {
+        $eventtrig=0;
       }
-      else {
-         $eventtrig=0;
-      }
-   }, 1000);   //
-}
+    }, 1000); // End setInterval
+  }
 
 
 
-$(window).on('keydown', function(event) {
- // (event.which === 84);
+  $(window).on('keydown', function(event) {
+    // (event.which === 84);
     $conundrum();
     $victory();  //gotta call the functions!
   });
 
 
-$(window).on("click",(function() {
-  $conundrumTwo();
-  $victoryTwo();
-}));
+  $(window).on("click",(function() {
+    $conundrumTwo();
+    $victoryTwo();
+  }));
 
+});
 
 
 
